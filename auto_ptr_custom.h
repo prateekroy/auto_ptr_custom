@@ -1,7 +1,6 @@
 #ifndef _auto_ptr_cust_h_
 #define _auto_ptr_cust_h_
 
-
 namespace stdxx{
 
 template<typename T>
@@ -41,7 +40,9 @@ public:
 		return _ptr; 
     }
        
-    T* get() { return _ptr; }
+    T* get() { 
+    	return _ptr;
+    }
        
 
     T* release(){
