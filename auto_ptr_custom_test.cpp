@@ -47,8 +47,8 @@ int main(){
 		FooPtr  fooPtr( new Foo);
 		FooPtr  fooPtr2( fooPtr);
 		
-		//:TODO:
-		//FooPtr fooPtr = FooPtr( new Foo);   not wokring ... why??
+		
+		FooPtr fooPtr = FooPtr( new Foo);  
 		
 		fooPtr2->hello();
 	}
@@ -67,8 +67,8 @@ int main(){
 		FooPtr  fooPtr( new Foo);
 		FooPtr  fooPtr2( fooPtr);
 		
-		//:TODO:
-		//FooPtr fooPtr = FooPtr( new Foo);   not wokring ... why??
+		
+		FooPtr fooPtr = FooPtr( new Foo);  
 		
 		fooPtr2->hello();
 	}	
