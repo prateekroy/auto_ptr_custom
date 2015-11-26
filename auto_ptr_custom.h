@@ -23,6 +23,9 @@ public:
 	auto_ptr_custom(auto_ptr_custom& copyMe) : _ptr( copyMe.release() ) { 
 	}
 	
+	auto_ptr_custom(const auto_ptr_custom<T,Deleter>& copyMe):_ptr(copyMe._ptr) { 
+	}
+	
 	auto_ptr_custom& operator=(auto_ptr_custom<T,Deleter>& rhs) { 
 		_ptr = rhs.release();
    		return *this;
